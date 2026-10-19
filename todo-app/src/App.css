@@ -1,0 +1,282 @@
+.app {
+  width: min(480px, 100%);
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  text-align: left;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  padding: 10px 12px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  color: var(--text-h);
+}
+
+.tab.is-active {
+  color: var(--text-h);
+  border-bottom-color: var(--text-h);
+  font-weight: 500;
+}
+
+.tab:focus-visible,
+.sort:focus-visible,
+.add-submit:focus-visible {
+  outline: 2px solid var(--text-h);
+  outline-offset: 2px;
+}
+
+.sorts {
+  display: flex;
+  gap: 8px;
+  padding: 12px 4px 0;
+}
+
+.sort {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sort:hover,
+.sort.is-active {
+  color: var(--text-h);
+}
+
+.sort.is-active {
+  font-weight: 500;
+}
+
+.panel {
+  padding: 16px 4px 0;
+}
+
+.empty {
+  color: var(--text);
+}
+
+.empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.empty-action {
+  appearance: none;
+  font: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.empty-action:hover {
+  border-color: var(--text-h);
+}
+
+.add-hint {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.task input[type='checkbox'] {
+  margin-top: 5px;
+  accent-color: var(--text-h);
+}
+
+.task-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.task-title {
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.task.is-done .task-title {
+  color: var(--text);
+  text-decoration: line-through;
+}
+
+.task.is-done .due,
+.task.is-done .marker,
+.task.is-done .context,
+.task.is-done .memo {
+  opacity: 0.7;
+}
+
+.marker,
+.context,
+.due {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.due-soon {
+  color: var(--text-h);
+}
+
+.due-overdue {
+  color: var(--overdue);
+  font-weight: 500;
+}
+
+.context {
+  margin-left: auto;
+}
+
+.memo {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.add-title,
+.add-memo,
+.add-field input,
+.add-field select,
+.add-submit {
+  font: inherit;
+  color: var(--text-h);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+
+.add-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.add-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.add-meeting {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.add-meeting span {
+  margin-right: 2px;
+}
+
+.add-meeting label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-h);
+}
+
+.add-submit {
+  align-self: flex-start;
+  cursor: pointer;
+  background: var(--text-h);
+  color: var(--bg);
+  border-color: var(--text-h);
+}
+
+.add-submit:hover {
+  opacity: 0.9;
+}
+
+.task-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-actions,
+.edit-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.task-action {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.task-action:hover {
+  color: var(--text-h);
+}
+
+.task-action:focus-visible {
+  outline: 2px solid var(--text-h);
+  outline-offset: 2px;
+}
