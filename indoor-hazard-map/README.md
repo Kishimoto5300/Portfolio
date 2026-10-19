@@ -3,7 +3,7 @@
 高齢者の家庭内事故を防ぐための 3D チェックツールです。
 間取り図の画像から壁を立体化し、家具を置き、つまずき・段差などの危険箇所にピンを立てて、室内の危険を立体的に確認できます。
 
-**デモ：** https://kishimoto5300.github.io/indoor-hazard-map/
+**デモ：** https://kishimoto5300.github.io/Portfolio/indoor-hazard-map/
 
 ## できること
 

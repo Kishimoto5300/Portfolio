@@ -2,7 +2,7 @@
 
 予算・カロリー・調理時間の条件を入力すると、主食・主菜・副菜を組み合わせた献立を 3 案ランダムに提案する Web アプリです。
 
-**デモ：** https://kishimoto5300.github.io/meal-generator/
+**デモ：** https://kishimoto5300.github.io/Portfolio/meal-generator/docs/
 
 ## できること
 
@@ -41,4 +41,4 @@ npm run dev
 ## 公開（GitHub Pages）
 
 `npm run build` を実行すると `docs/` にビルド結果が出力されます。
-GitHub Pages は main ブランチの `/docs` フォルダから公開しています。
+`docs/` は Portfolio リポジトリの GitHub Pages から `meal-generator/docs/` として公開されます。

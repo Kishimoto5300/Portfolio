@@ -2,7 +2,7 @@
 
 「就活」「学業」「プライベート」という状況ごとのタスクと、それらをまとめて見る「全体」の視点を、ワンタップで切り替えられるシンプルな ToDo アプリです。
 
-**デモ：** https://kishimoto5300.github.io/todo-app/
+**デモ：** https://kishimoto5300.github.io/Portfolio/todo-app/docs/
 
 ## なぜ作ったか
 
@@ -52,4 +52,4 @@ npm run dev
 ## 公開（GitHub Pages）
 
 `npm run build` を実行すると `docs/` にビルド結果が出力されます。
-GitHub Pages は main ブランチの `/docs` フォルダから公開しています。
+`docs/` は Portfolio リポジトリの GitHub Pages から `todo-app/docs/` として公開されます。
